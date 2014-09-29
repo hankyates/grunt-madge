@@ -23,8 +23,7 @@ module.exports = function (grunt) {
 
 		// run madge on the given files/dirs
 		result = madge(files, {
-			format: options.format,
-			breakOnError: true
+			format: options.format
 		});
 
 		circular = result.circular().getArray();
